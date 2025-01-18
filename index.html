@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="alternate" media="screen and (max-width: 768px)" href="mobile.html">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
-      </head>
+</head>
 
 <body>
+    <script>
+        if (window.innerWidth <= 768) {
+            window.location.href = "mobile.html";
+        }
+    </script>
+
     <!-- Sidebar Section -->
     <aside>
         <h2>Categories</h2>
@@ -36,13 +42,13 @@
         <span class="cart-count">0</span> <!-- Add this element -->
     </div>
 
-<div class="cart-details">
-    <h2>Cart Details</h2>
-    <p>Total Amount: ₹0</p>
-    <ul class="cart-list"></ul> <!-- Add this element -->
-    <button class="close-cart">Close</button>
-    <button class="Pay-cart" style="background-color: #ff0000; color: #ffffff;">Pay</button>
-</div>
+    <div class="cart-details">
+        <h2>Cart Details</h2>
+        <p>Total Amount: ₹0</p>
+        <ul class="cart-list"></ul> <!-- Add this element -->
+        <button class="close-cart">Close</button>
+        <button class="Pay-cart" style="background-color: #ff0000; color: #ffffff;">Pay</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
